@@ -1,13 +1,12 @@
-Ser + Tech Programa 50+
-#1076
+Ser + Tech Programa 50+ Turma 1076
+
+
 Projeto Final - Catálogo IMDB
-Voltar para Seleçāo de Projetos
 
 
-Daniel Castilho Do Nascimento
-Id: 1076032
-D
 Enunciado Do Projeto
+
+
 Desenvolva um sistema que apresente um catálogo de filmes, similar ao IMDB.
 
 Neste sistema cada filme deve possuir alguns atributos como o nome, data de lançamento, orçamento e descrição.
