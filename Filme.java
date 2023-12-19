@@ -44,5 +44,15 @@ public class Filme {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public void status()
+    {
+        System.out.println("\n\n**** Status do Filme ****  ");
+        System.out.println("Nome do Filme:  " + this.nome);
+        System.out.println("Data de Lançamento: " + this.dataLancamento);
+        System.out.printf("Valor Orçamento do filme:  "+ this.orcamento);
+    }
+
 }
+
 
