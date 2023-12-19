@@ -1,0 +1,59 @@
+
+//Desenvolva um sistema que apresente um catálogo de filmes, similar ao IMDB.
+////Neste sistema cada filme deve possuir alguns atributos como o nome, data de lançamento,
+// orçamento e descrição.////Cada filme também deve possuir um diretor e uma lista de atores que trabalharam no filme, adicione atributos para as pessoas. Implemente uma aplicação
+// em que o usuário possa:
+//cadastrar filmes
+// cadastrar atores
+// cadastrar diretores
+// associar um filme com seus atores e diretores
+// permita pesquisar filme cadastrados pelo nome,
+// desconsiderando letras maiúsculas e minúsculas
+// Utilize os conceitos de programação orientada a objetos vistos nas aulas como encapsulamento,
+// herança, polimorfismos e classes abstratas.
+//O projeto será desenvolvido em grupos de até 4 integrantes, a entrega será feita via
+// repositório GIT. A avaliação será feita considerando os commits individuais, portanto é importante que todos colaborem no desenvolvimento do projeto.
+import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+
+public abstract class ProfissionaisCinema {
+    private String nome;
+    private String nacionalidade;
+    private String dataNascimento;
+
+    //A declaração de um método como abstrato exige a sua sobrescrita
+    // na subclasse concreta. Se uma classe estende outra que tem método
+    // abstrato e não o implementa, então ela também é considerada abstrata e
+    // deve ser declarada como tal, ou ocorre erro de compilação.
+    public ProfissionaisCinema(String nome, String nacionalidade, String dataNascimento) {
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.dataNascimento = dataNascimento;
+    }
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public String getPremiacoes() {
+        return premiacoes;
+    }
+
+    public void setPremiacoes(String premiacoes) {
+        this.premiacoes = premiacoes;
+    }
+
+}
+
