@@ -1,1 +1,33 @@
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String[] args) {
+
+        //aqui entra o switch
+        // cadastrar filmes
+        // cadastrar atores
+        ///cadastrar diretores
+
+        String cadastro = "Inserir dados ";
+        Scanner scanner = new Scanner(System.in);
+
+        switch (cadastro) {
+            case "inserir"://filme,diretor, ator
+                System.out.println("Digite 1");
+                System.out.println("Insira nome : ");
+                System.out.println("Insira nacionalidade : ");
+                System.out.println("Insira Data de nascimento : ");
+                break;
+            case "remover":
+                System.out.println("Digite 2 ");
+                break;
+            case "pesquisar":
+                System.out.println("Digite 3 ");
+                break;
+            case "listar":
+                System.out.println("Digite 4 ");
+                break;
+        }
+    }
+}
 
